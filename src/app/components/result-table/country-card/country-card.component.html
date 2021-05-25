@@ -1,0 +1,6 @@
+<div (click)="countryHide(country)" [ngClass]="country.hidden ? 'country-hidden' : 'country-card'">
+    {{country.name.toUpperCase()}} 
+    <br/>
+    <img src={{country.flag}} />
+
+    </div>

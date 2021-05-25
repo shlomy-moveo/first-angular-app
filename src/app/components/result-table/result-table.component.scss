@@ -1,0 +1,23 @@
+@import '/src/styles.scss';
+
+
+.country-container {
+    
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-left: 0;
+
+}
+
+
+@media (max-width: 600px) {
+
+    
+    .column {
+      width: 60%;
+    //   display: block;
+      margin-bottom: 20px;
+    }
+  }

@@ -1,0 +1,9 @@
+<div *ngIf="this.ms.countriesList" class="country-container">
+    <div  *ngFor="let country of this.ms.countriesList" class="column">
+        <app-country-card [country]= "country">
+             <!-- {{country.name.toUpperCase()}} 
+             <br/>
+             <img src={{country.flag}} /> -->
+    </app-country-card>
+</div>
+</div>

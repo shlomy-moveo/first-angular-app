@@ -1,0 +1,17 @@
+@media (max-width:600px){
+
+
+.page-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+app-search-control{
+    width: 70%;
+    margin: auto;
+}
+
+app-result-table{
+    width: 80%;
+}
+}

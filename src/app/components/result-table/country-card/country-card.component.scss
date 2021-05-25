@@ -1,0 +1,106 @@
+@import '/src/styles.scss';
+
+  
+  h1 {
+  @extend %headers;
+  font-size: xx-large;
+  }
+
+button{
+    font-weight: 600;
+    font-size: larger;
+    font-family: $font-stack;
+    background-color: $primary-color;
+    color: white;
+    // margin-left: 20px;
+}
+
+.country-card{
+    cursor: pointer;
+    width: 210px;
+     height: 380px; 
+    margin: 16px;
+    font-family: $font-stack;    
+        block-size: auto; 
+         text-align: center; 
+         border: black 2px solid;
+
+  }
+//   .body-container{
+//   text-align: center;
+// }
+
+  
+
+    input {font-size: larger;
+        font-family: $font-stack;  
+      }
+
+
+
+.search-container {
+    // display: flex;
+    // justify-content: center;
+    // width: 100%;
+    // text-align: center;
+    // display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    // padding-left: 0;
+}
+
+.ng-autocomplete {
+    // display: flex;
+    justify-content: center;
+    // flex-wrap: wrap;
+    align-items: center;
+    padding-left: 0;
+    margin: auto;
+  }
+
+ng-autocomplete{
+    display: inline;
+    color: brown;
+    width: 80vh;
+}
+
+.country-container {
+    
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-left: 0;
+
+
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .column {
+      width: 60%;
+    //   display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Style the counter cards */
+  .country-card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+  }
+
+Img {border: black white solid 2px;
+    width: 150px;
+    height: 75px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;} 
+
+  .country-hidden{
+      display: none;
+  }

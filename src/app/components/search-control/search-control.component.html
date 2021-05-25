@@ -1,0 +1,22 @@
+<div id="search-container">
+    <div class="ng-autocomplete">
+        <button (click)="reset()" >Reset</button>
+        <ng-autocomplete
+        [data]="this.ms.countriesList"
+        [searchKeyword]="keyword"
+        placeholder="Enter the Country Name"
+        (selected)='compareSearchWord($event.name)'
+        (inputChanged)='compareSearchWord($event)'
+        historyIdentifier="countries"
+        [itemTemplate]="itemTemplate"
+        [notFoundTemplate]="notFoundTemplate">
+    </ng-autocomplete>      
+</div>
+<ng-template #itemTemplate let-item >
+    <a [innerHTML]="item.name"></a>
+  </ng-template>
+
+  <ng-template #notFoundTemplate let-notFound>
+    <div [innerHTML]="notFound"></div>
+  </ng-template>
+</div>
