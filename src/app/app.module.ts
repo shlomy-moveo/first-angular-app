@@ -2,6 +2,9 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import {AutocompleteLibModule} from 'angular-ng-autocomplete';
+import {FormsModule} from '@angular/forms'
+
+
 
 
 
@@ -12,6 +15,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { SearchControlComponent } from './components/search-control/search-control.component';
 import { ResultTableComponent } from './components/result-table/result-table.component';
 import { CountryCardComponent } from './components/result-table/country-card/country-card.component';
+import { MapComponent } from './pages/map/map.component';
+import { GooglePlacesComponent } from './components/google-places/google-places.component';
 
 @NgModule({
   declarations: [
@@ -20,13 +25,16 @@ import { CountryCardComponent } from './components/result-table/country-card/cou
     HeaderComponent,
     SearchControlComponent,
     ResultTableComponent,
-    CountryCardComponent
+    CountryCardComponent,
+    MapComponent,
+    GooglePlacesComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    AutocompleteLibModule
+    AutocompleteLibModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
