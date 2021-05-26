@@ -17,6 +17,8 @@ import { ResultTableComponent } from './components/result-table/result-table.com
 import { CountryCardComponent } from './components/result-table/country-card/country-card.component';
 import { MapComponent } from './pages/map/map.component';
 import { GooglePlacesComponent } from './components/google-places/google-places.component';
+import { AutocompleteComponent } from './components/autocomplete/autocomplete.component';
+import { DirectionComponent } from './components/direction/direction.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { GooglePlacesComponent } from './components/google-places/google-places.
     ResultTableComponent,
     CountryCardComponent,
     MapComponent,
-    GooglePlacesComponent
+    GooglePlacesComponent,
+    AutocompleteComponent,
+    DirectionComponent
   ],
   imports: [
     BrowserModule,
